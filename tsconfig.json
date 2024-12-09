@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Compile to ES6 JavaScript
+    "module": "CommonJS", // Node.js module system
+    "strict": true, // Enable strict type-checking options
+    "baseUrl": ".", // Base directory for resolving modules
+    "paths": {
+      "*": ["types/*"] // Map wildcard imports to the types directory
+    },
+    "esModuleInterop": true, // Allow interop between CommonJS and ES modules
+    "skipLibCheck": true, // Skip type checking of declaration files in node_modules
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in imports
+    "outDir": "./dist", // Output compiled files to the dist directory
+    "rootDir": "./src", // Input source files are in the src directory
+    "resolveJsonModule": true, // Allow importing JSON files
+    "lib": ["ES2020", "DOM"], // Include modern JavaScript and DOM APIs
+    "noImplicitReturns": true, // Ensure functions always return a value
+    "noFallthroughCasesInSwitch": true, // Disallow fallthrough in switch statements
+    "moduleResolution": "node" // Use Node.js module resolution strategy
+  },
+  "include": ["src/**/*", "types/**/*"], // Include all files in src and types
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and compiled output
+}
